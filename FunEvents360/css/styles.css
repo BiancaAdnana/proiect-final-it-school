@@ -1,0 +1,151 @@
+:root {
+    --bg-primary: #010101;
+    --text-primary: #FFFFFF;
+    --text-secondary: #F2B004;;
+
+    --fs-large: 1rem;
+    --fs-medium: 0.875rem;
+    --fs-small: 0.75rem;
+
+    --spacing-xl: 2.625rem;
+    --spacing-large: 1.75rem;
+    --spacing-medium: 1rem;
+    --spacing-small: 0.5rem;
+    --spacing-tiny: 0.25rem;
+
+    --mobile-logo-height: 45px;
+
+    --border-color: #ddd; 
+    }
+
+* {
+    box-sizing: border-box;
+}
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(Poppins-Light.ttf);
+}
+
+body {
+    background:  var(--bg-primary);
+    min-height: 100vh;
+    font-family: 'Poppins';
+}
+
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    color: var(--text-primary);
+}
+
+main, footer {
+    flex-grow: 1;
+}
+
+footer {
+    margin-top: 25px;
+    padding: 25px;
+}
+
+
+
+@media (max-width: 1400px) { }
+@media (min-width: 320px) { }
+
+
+/* https://cssgradient.io/ */
+.gradient {
+    background: linear-gradient(48deg, rgba(7,21,96,1) 30%, rgba(252,70,107,1) 100%);
+}
+.navbar-toggler {
+    border: 1px solid var(--text-secondary);
+}
+.navbar-toggler:focus, .navbar-toggler:focus-visible {
+    color: var(--text-secondary);
+}
+.navbar-toggler-icon {
+    /* Burger icon color */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28242, 176, 4, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+nav .container-fluid, .footer-box{
+    max-width: 1200px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+.nav-item {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 40px;
+}
+.nav-link {
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    font-style: normal;
+    font-weight: 500;
+
+    border: 2px solid transparent;
+    border-radius: 29px;
+}
+
+.navbar-nav .nav-link.active, 
+.navbar-nav .show>.nav-link {
+    border: 2px solid #F2B004;
+    border-radius: 29px;
+    color: var(--text-secondary);
+}
+.nav-link:hover {
+    border: 2px solid #F2B004;
+    border-radius: 29px;
+    color: var(--text-secondary);
+}
+
+.descriere {
+    max-width: 1200px;
+    min-width: 320px;
+    margin: 0px auto;
+    
+    margin-top: 25px;
+}
+
+.ev-box-bg {
+    background: rgba(242, 71, 215, 0.41);
+}
+
+.ev-titlu {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    padding-bottom: 20px;
+    font-style: italic;
+}
+.ev-descriere {
+    text-align: justify;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.footer-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 54px;
+    padding-bottom: 25px;
+}
+
+.footer-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.footer-copyright {
+    padding-top: 25px;
+}

@@ -1,0 +1,35 @@
+.welcome h1 {
+    text-align: center;
+    padding-top: var(--spacing-large);
+
+}
+
+.contact-text {
+    text-align: center;
+    padding-top: var(--spacing-large);
+    padding-bottom: var(--spacing-large);
+}
+
+.contact label {
+    margin-bottom: var(--spacing-tiny);
+}
+
+.contact input, .contact textarea {
+    font-size: var(--fs-medium);
+    margin-bottom: var(--spacing-medium);
+    padding: 20px;
+    
+    
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.contact-form {
+    color: #000000; 
+}
+
+.cere {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
